@@ -9,7 +9,7 @@ export default new Proxy(
       }
 
       throw new Error(
-        `Importing from \`@heroicons/vue\` directly is not supported. Please import from either \`@heroicons/vue/16/solid\`, \`@heroicons/vue/20/solid\`, \`@heroicons/vue/24/solid\`, or \`@heroicons/vue/24/outline\` instead.`
+        `Importing from \`@sidekickicons/vue\` directly is not supported. Please import from either \`@sidekickicons/vue/16/solid\`, \`@sidekickicons/vue/20/solid\`, \`@sidekickicons/vue/24/solid\`, or \`@sidekickicons/vue/24/outline\` instead.`
       )
     },
   }

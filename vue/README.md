@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://heroicons.com" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/.github/logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/.github/logo-light.svg">
-      <img alt="Heroicons" width="315" height="117" style="max-width: 100%" src="https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/.github/logo-light.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ndri/sidekickicons/HEAD/.github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ndri/sidekickicons/HEAD/.github/logo-light.svg">
+      <img alt="Heroicons" width="315" height="117" style="max-width: 100%" src="https://raw.githubusercontent.com/ndri/sidekickicons/HEAD/.github/logo-light.svg">
     </picture>
   </a>
 </p>
@@ -15,16 +15,16 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/tailwindlabs/heroicons/releases"><img src="https://img.shields.io/npm/v/@heroicons/vue" alt="Latest Release"></a>
-    <a href="https://github.com/tailwindlabs/heroicons/blob/master/vue/LICENSE"><img src="https://img.shields.io/npm/l/@heroicons/vue.svg" alt="License"></a>
+    <a href="https://github.com/ndri/sidekickicons/releases"><img src="https://img.shields.io/npm/v/@sidekickicons/vue" alt="Latest Release"></a>
+    <a href="https://github.com/ndri/sidekickicons/blob/master/vue/LICENSE"><img src="https://img.shields.io/npm/l/@sidekickicons/vue.svg" alt="License"></a>
 </p>
 
 ## Basic Usage
 
-First, install `@heroicons/vue` from npm:
+First, install `@sidekickicons/vue` from npm:
 
 ```sh
-npm install @heroicons/vue
+npm install @sidekickicons/vue
 ```
 
 Now each icon can be imported individually as a Vue component:
@@ -38,15 +38,15 @@ Now each icon can be imported individually as a Vue component:
 </template>
 
 <script setup>
-import { BeakerIcon } from '@heroicons/vue/24/solid'
+import { BeakerIcon } from '@sidekickicons/vue/24/solid'
 </script>
 ```
 
-The 24x24 outline icons can be imported from `@heroicons/vue/24/outline`, the 24x24 solid icons can be imported from `@heroicons/vue/24/solid`, the 20x20 solid icons can be imported from `@heroicons/vue/20/solid`, and the 16x16 solid icons can be imported from `@heroicons/vue/16/solid`.
+The 24x24 outline icons can be imported from `@sidekickicons/vue/24/outline`, the 24x24 solid icons can be imported from `@sidekickicons/vue/24/solid`, the 20x20 solid icons can be imported from `@sidekickicons/vue/20/solid`, and the 16x16 solid icons can be imported from `@sidekickicons/vue/16/solid`.
 
 Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
 
-[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@heroicons/vue/24/outline/)
+[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/vue/24/outline/)
 
 ## Contributing
 

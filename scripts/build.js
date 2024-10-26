@@ -120,20 +120,24 @@ async function buildIcons(package, style, format) {
         if (isDeprecated) {
           types.push(`/** @deprecated */`)
         }
-        types.push(`declare const ${componentName}: React.ForwardRefExoticComponent<React.PropsWithoutRef<React.SVGProps<SVGSVGElement>> & { title?: string, titleId?: string } & React.RefAttributes<SVGSVGElement>>;`)
+        types.push(
+          `declare const ${componentName}: React.ForwardRefExoticComponent<React.PropsWithoutRef<React.SVGProps<SVGSVGElement>> & { title?: string, titleId?: string } & React.RefAttributes<SVGSVGElement>>;`
+        )
         types.push(`export default ${componentName};`)
       } else {
         types.push(`import type { FunctionalComponent, HTMLAttributes, VNodeProps } from 'vue';`)
         if (isDeprecated) {
           types.push(`/** @deprecated */`)
         }
-        types.push(`declare const ${componentName}: FunctionalComponent<HTMLAttributes & VNodeProps>;`)
+        types.push(
+          `declare const ${componentName}: FunctionalComponent<HTMLAttributes & VNodeProps>;`
+        )
         types.push(`export default ${componentName};`)
       }
 
       return [
         ensureWrite(`${outDir}/${componentName}.js`, content),
-        ...(types ? [ensureWrite(`${outDir}/${componentName}.d.ts`, types.join("\n") + "\n")] : []),
+        ...(types ? [ensureWrite(`${outDir}/${componentName}.d.ts`, types.join('\n') + '\n')] : []),
       ]
     })
   )

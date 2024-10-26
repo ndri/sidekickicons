@@ -7,7 +7,7 @@ let proxy = new Proxy(
       }
 
       throw new Error(
-        `You\'re trying to import \`@heroicons/vue/solid/${property}\` from Heroicons v1 but have installed Heroicons v2. Install \`@heroicons/vue@v1\` to resolve this error.`
+        `You\'re trying to import \`@sidekickicons/vue/solid/${property}\` from Heroicons v1 but have installed Heroicons v2. Install \`@sidekickicons/vue@v1\` to resolve this error.`
       )
     },
   }
