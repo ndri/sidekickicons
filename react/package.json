@@ -1,13 +1,13 @@
 {
-  "name": "@heroicons/react",
+  "name": "@sidekickicons/react",
   "license": "MIT",
-  "version": "2.1.5",
+  "version": "0.1.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/tailwindlabs/heroicons#readme",
+  "homepage": "https://github.com/ndri/sidekickicons#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tailwindlabs/heroicons.git"
+    "url": "https://github.com/ndri/sidekickicons.git"
   },
   "files": [
     "16",
