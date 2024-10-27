@@ -7,7 +7,7 @@ export default {
     {
       name: 'removeAttrs',
       params: {
-        attrs: ['fill'],
+        attrs: ['fill', 'style'],
       },
     },
     {
