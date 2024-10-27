@@ -16,6 +16,15 @@ Unfortunately, I can't contribute these icons to the Heroicons repository. From 
 
 So I am sharing these icons in my own library as a Sidekick to the Hero.
 
+## List of available icons
+
+| Outline                                                      | Solid                                                      | Mini                                                       | Micro                                                      | Code             | Class              | Usage                            |
+| ------------------------------------------------------------ | ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------- | ------------------ | -------------------------------- |
+| ![arrow-path-clock.svg](src/24/outline/arrow-path-clock.svg) | ![arrow-path-clock.svg](src/24/solid/arrow-path-clock.svg) | ![arrow-path-clock.svg](src/20/solid/arrow-path-clock.svg) | ![arrow-path-clock.svg](src/16/solid/arrow-path-clock.svg) | arrow-path-clock | ArrowPathClockIcon | history                          |
+| ![compass.svg](src/24/outline/compass.svg)                   | ![compass.svg](src/24/solid/compass.svg)                   | ![compass.svg](src/20/solid/compass.svg)                   | ![compass.svg](src/16/solid/compass.svg)                   | compass          | CompassIcon        | explore                          |
+| ![crown.svg](src/24/outline/crown.svg)                       | ![crown.svg](src/24/solid/crown.svg)                       | ![crown.svg](src/20/solid/crown.svg)                       | ![crown.svg](src/16/solid/crown.svg)                       | crown            | CrownIcon          | upgrade, pro, premium, subscribe |
+| ![mask.svg](src/24/outline/mask.svg)                         | ![mask.svg](src/24/solid/mask.svg)                         | ![mask.svg](src/20/solid/mask.svg)                         | ![mask.svg](src/16/solid/mask.svg)                         | mask             | MaskIcon           | privacy, security                |
+
 ## Usage
 
 WIP

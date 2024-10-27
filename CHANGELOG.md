@@ -21,6 +21,10 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - All Heroicons
 
+### Added
+
+- Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
+
 [unreleased]: https://github.com/ndri/sidekickicons/compare/v0.1.0...HEAD
 
 <!-- [1.0.0]: https://github.com/ndri/sidekickicons/compare/v0.1.0...v1.0.0 -->
