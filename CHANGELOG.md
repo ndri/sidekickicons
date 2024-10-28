@@ -29,4 +29,4 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 <!-- [1.0.0]: https://github.com/ndri/sidekickicons/compare/v0.1.0...v1.0.0 -->
 
-[0.1.0]: https://github.com/ndri/sidekickicons/releases/tag/v1.0.0
+[0.1.0]: https://github.com/ndri/sidekickicons/releases/tag/v0.1.0

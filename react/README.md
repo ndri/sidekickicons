@@ -18,22 +18,28 @@ First, install `@sidekickicons/react` from npm:
 npm install @sidekickicons/react
 ```
 
-Now each icon can be imported individually as a React component:
+Now each icon can be used alongside Heroicons and imported individually as a React component:
 
 ```js
-import { MaskIcon } from '@sidekickicons/react/24/solid'
+import { CrownIcon } from '@sidekickicons/react/24/solid'
+import { BeakerIcon } from '@heroicons/react/24/solid'
 
 function MyComponent() {
   return (
     <div>
-      <MaskIcon className="size-6 text-blue-500" />
-      <p>...</p>
+      <CrownIcon className="size-6 text-blue-500" />
+      <BeakerIcon className="size-6 text-green-500" />
     </div>
   )
 }
 ```
 
-The 24x24 outline icons can be imported from `@sidekickicons/react/24/outline`, the 24x24 solid icons can be imported from `@sidekickicons/react/24/solid`, the 20x20 solid icons can be imported from `@sidekickicons/react/20/solid`, and 16x16 solid icons can be imported from `@sidekickicons/react/16/solid`.
+Import the icons from their respective directory:
+
+- 24x24 outline: `@sidekickicons/react/24/outline`
+- 24x24 solid: `@sidekickicons/react/24/solid`
+- 20x20 solid: `@sidekickicons/react/20/solid`
+- 16x16 solid: `@sidekickicons/react/16/solid`
 
 Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
 
