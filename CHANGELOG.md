@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- `chevron-down-up`
+- Nothing yet!
+
+## [0.3.0] - 2024-10-30
+
+### Added
+
+- Add new icons (`chevron-down-up`, `floppy-disk`, `sidebar-left`, `sidebar-right`, `shield`, `arc-third`)
 
 ## [0.2.0] - 2024-10-28
 
@@ -32,6 +38,7 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.2.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/ndri/sidekickicons/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/ndri/sidekickicons/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/ndri/sidekickicons/releases/tag/v0.1.0
