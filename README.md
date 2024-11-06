@@ -16,6 +16,8 @@ Unfortunately, I can't contribute these icons to the Heroicons repository. From 
 
 So I am sharing these icons in my own library as a Sidekick to the Hero.
 
+Browse them at [sidekickicons.andri.io](https://sidekickicons.andri.io/).
+
 ## List of available icons
 
 | Outline                                                      | Solid                                                      | Mini                                                       | Micro                                                      | Code             | Class               | Usage                            |
@@ -36,9 +38,7 @@ So I am sharing these icons in my own library as a Sidekick to the Hero.
 
 ## Usage
 
-These icons can be used exactly like Heroicons. There is no website like [heroicons.com](https://heroicons.com/) yet, but you can currently see the list of icons in this README and get the SVG files from the `optimized` directory (**not** the `src` directory!).
-
-You can then add the SVG directly into your HTML:
+These icons can be used exactly like Heroicons. You can copy the SVG source of an icon from [sidekickicons.andri.io](https://sidekickicons.andri.io/) and inline it directly into your HTML:
 
 ```html
 <svg
