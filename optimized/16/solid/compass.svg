@@ -1,3 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
   <path d="M8.75 8a.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75.75.75 0 0 1 .75.75ZM8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm3.248 3.23c.054.002.11.014.16.032a.537.537 0 0 1 .278.797L9.172 9.006a.542.542 0 0 1-.166.166l-3.947 2.514c-.486.308-1.05-.259-.743-.745l2.512-3.947a.542.542 0 0 1 .166-.166l3.947-2.512a.539.539 0 0 1 .307-.086z"/>
 </svg>
