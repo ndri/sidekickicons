@@ -16,8 +16,6 @@ export default {
         attributes: [
           {
             'stroke-width': '1.5',
-            'stroke-linecap': 'round',
-            'stroke-linejoin': 'round',
             stroke: 'currentColor',
             'aria-hidden': 'true',
             'data-slot': 'icon',
