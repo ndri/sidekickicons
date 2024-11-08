@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.4.0] - 2024-11-08
+
+### Added
+
+- Add new icons (`chevron-left-right`, `chevron-right-left`, `view-split`, `cookie`)
+
+### Changed
+
+- Remove `xml:space="preserve"` from SVG-s
+- Remove duplicate `stroke-linecap="round"` and `stroke-linejoin="round"` from SVG-s
+- Link to the app to browse the icons in the README
+
 ## [0.3.0] - 2024-10-30
 
 ### Added
@@ -38,7 +50,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.3.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/ndri/sidekickicons/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/ndri/sidekickicons/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/ndri/sidekickicons/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/ndri/sidekickicons/releases/tag/v0.1.0
