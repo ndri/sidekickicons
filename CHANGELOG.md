@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.5.0] - 2024-11-10
+
+### Added
+
+- Add new icons (`pin`, `pin-slash`)
+
 ## [0.4.0] - 2024-11-08
 
 ### Added
@@ -50,7 +56,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.4.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/ndri/sidekickicons/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/ndri/sidekickicons/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/ndri/sidekickicons/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/ndri/sidekickicons/compare/v0.1.0...v0.2.0
