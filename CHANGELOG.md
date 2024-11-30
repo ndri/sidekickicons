@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.6.0] - 2024-11-30
+
+### Added
+
+- Add new icons (`h4`, `h5`, `h6`, `heading`)
+
+### Changed
+
+- Add `stroke-linecap="round"` and `stroke-linejoin="round"` to `pin-slash` icon
+
 ## [0.5.0] - 2024-11-10
 
 ### Added
@@ -56,7 +66,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.5.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/ndri/sidekickicons/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/ndri/sidekickicons/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/ndri/sidekickicons/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/ndri/sidekickicons/compare/v0.2.0...v0.3.0
