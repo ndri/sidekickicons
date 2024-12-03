@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.7.0] - 2024-12-03
+
+### Added
+
+- Add new icons (`lock-semi-open`, `dots-2x3`, `dots-3x2`, `face-smile-plus`)
+
+### Changed
+
+- Add support for React 19
+
 ## [0.6.0] - 2024-11-30
 
 ### Added
@@ -66,7 +76,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.6.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/ndri/sidekickicons/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/ndri/sidekickicons/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/ndri/sidekickicons/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/ndri/sidekickicons/compare/v0.3.0...v0.4.0
