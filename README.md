@@ -157,3 +157,7 @@ I will create a better contribution guide in the future.
 ## License
 
 This library is MIT licensed.
+
+The repository is forked from [Heroicons](https://github.com/tailwindlabs/heroicons) and the tooling from there is unchanged. The license for the files from that repository is included in the [HEROICONS-LICENSE](HEROICONS-LICENSE) file.
+
+The icons themselves have been replaced and are not affiliated with Tailwind Labs, Inc. The license for the new icons is included in the [LICENSE](LICENSE) file.
