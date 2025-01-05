@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add new icons (`password`, `password-pencil`, `check-double`)
+- Add new icons (`password`, `password-pencil`, `check-double`, `computer-laptop`)
 
 ## [0.8.0] - 2024-12-28
 
