@@ -7,7 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.9.0] - 2025-01-05
+
+### Added
+
 - Add new icons (`password`, `password-pencil`, `check-double`, `computer-laptop`)
+
+### Changed
+
+- Specify the license and attribution for Heroicons and Sidekickicons separately
 
 ## [0.8.0] - 2024-12-28
 
@@ -82,7 +92,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.8.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.9.0...HEAD
+[0.9.0]: https://github.com/ndri/sidekickicons/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/ndri/sidekickicons/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/ndri/sidekickicons/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/ndri/sidekickicons/compare/v0.5.0...v0.6.0
