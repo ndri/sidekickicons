@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 16 16"
+   fill="currentColor"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="photo-plus.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   width="16"
+   height="16"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect7"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2.25,0,1 @ F,0,0,1,0,2.25,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect8"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,3.25,0,1 @ F,0,0,1,0,3.25,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="23.081248"
+     inkscape:cx="11.654482"
+     inkscape:cy="-2.7294885"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.25"
+       spacingy="0.25"
+       empcolor="#0099e5"
+       empopacity="0.6"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="2"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+    <inkscape:grid
+       id="grid2"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="4"
+       spacingy="4"
+       empcolor="#e50000"
+       empopacity="0.6"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="1"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <path
+     id="path1"
+     style="fill:#000000"
+     d="m 12.5,1 a 0.75,0.75 0 0 0 -0.75,0.75 v 1 h -1 A 0.75,0.75 0 0 0 10,3.5 0.75,0.75 0 0 0 10.75,4.25 h 1 v 1 A 0.75,0.75 0 0 0 12.5,6 0.75,0.75 0 0 0 13.25,5.25 v -1 h 1 A 0.75,0.75 0 0 0 15,3.5 0.75,0.75 0 0 0 14.25,2.75 h -1 v -1 A 0.75,0.75 0 0 0 12.5,1 Z M 4,2 C 2.8954033,2 2,2.8954333 2,4 v 8 c 0,1.104597 0.8954033,2 2,2 h 8 c 1.104567,0 2,-0.895403 2,-2 V 6.8085938 A 2.25,2.25 0 0 1 12.5,7.5 2.25,2.25 0 0 1 10.396484,5.6035156 2.25,2.25 0 0 1 8.5,3.5 2.25,2.25 0 0 1 9.1914062,2 H 5.0859375 Z M 5,4 C 5.5522988,4 6,4.4477212 6,5 6,5.5522788 5.5522988,6 5,6 4.4477012,6 4,5.5522788 4,5 4,4.4477212 4.4477012,4 5,4 Z m 5,3.2070312 c 0.12796,0 0.255886,0.048855 0.353516,0.1464844 l 2,2 C 12.447286,9.4472855 12.5,9.5744214 12.5,9.7070312 V 12 c 0,0.2761 -0.22386,0.5 -0.5,0.5 H 4 C 3.7239003,12.5 3.5,12.2761 3.5,12 V 9.7070312 c 0,-0.1326098 0.052785,-0.2597457 0.1464844,-0.3535156 l 1,-1 c 0.1952998,-0.1952598 0.5117314,-0.1952598 0.7070312,0 l 1.2929688,1.2929688 c 0.1952598,0.1952598 0.5117714,0.1952598 0.7070312,0 L 9.6464844,7.3535156 C 9.7441143,7.2558857 9.8720401,7.2070312 10,7.2070312 Z" />
+</svg>
