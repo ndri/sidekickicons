@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.11.0] - 2025-01-13
+
+### Added
+
+- Add new icons (`circle`, `triangle`, `square`, `badge`)
+
 ## [0.10.0] - 2025-01-11
 
 ### Added
@@ -104,7 +110,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.10.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.11.0...HEAD
+[0.11.0]: https://github.com/ndri/sidekickicons/compare/v0.10.0...v0.11.0
 [0.10.0]: https://github.com/ndri/sidekickicons/compare/v0.9.1...v0.10.0
 [0.9.1]: https://github.com/ndri/sidekickicons/compare/v0.9.0...v0.9.1
 [0.9.0]: https://github.com/ndri/sidekickicons/compare/v0.8.0...v0.9.0
