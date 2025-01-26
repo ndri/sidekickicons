@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add new icons (`dice`, `shuffle`, `gamepad`, `robot`)
+- Add new icons (`dice`, `arrows-crossing`, `gamepad`, `robot`)
 
 ## [0.11.0] - 2025-01-13
 
