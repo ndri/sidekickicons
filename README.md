@@ -165,6 +165,36 @@ Icons use an upper camel case naming convention and are always suffixed with the
 
 [Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/vue/24/outline/)
 
+### Rails
+
+In Rails, you can use Heroicons and Sidekickicons using [Rails Icons](https://github.com/Rails-Designer/rails_icons).
+
+First, add the gem:
+
+```bash
+bundle add rails_icons
+```
+
+Then, install the icons:
+
+```bash
+rails generate rails_icons:install --libraries=heroicons
+rails generate rails_icons:install --libraries=sidekickicons
+```
+
+Now you can use the icons in your code. The default library is Heroicons and you need to specify Sidekickicons. The available variants are `outline` (default), `solid`, `mini`, and `micro`.
+
+```ruby
+# Heroicons beaker icon, outline 24px
+icon "beaker"
+# Heroicons beaker icon, solid 24px
+icon "beaker", variant: "solid"
+# Sidekickicons crown icon, outline 24px
+icon "crown", library: "sidekickicons"
+# Sidekickicons crown icon, mini 20px
+icon "crown", library: "sidekickicons", variant: "mini"
+```
+
 ## Contributing
 
 Feel free to suggest icons in an issue or create a pull request with your own icons.
