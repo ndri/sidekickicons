@@ -165,6 +165,40 @@ Icons use an upper camel case naming convention and are always suffixed with the
 
 [Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/vue/24/outline/)
 
+### Svelte
+
+First, install [`@sidekickicons/svelte`](https://github.com/ndri/sidekickicons-svelte) from npm:
+
+```bash
+pnpm install @sidekickicons/svelte
+```
+
+Now each icon can be imported and used in Svelte components. Since there is no official Svelte package for Heroicons, the [`@sidekickicons/svelte`](https://github.com/ndri/sidekickicons-svelte) package includes Heroicons as well.
+
+```svelte
+<script lang="ts">
+  import { CrownIcon, BeakerIcon } from '@sidekickicons/svelte/24/solid'
+</script>
+
+<div>
+  <CrownIcon class="text-blue-500" />
+  <BeakerIcon class="text-green-500" />
+</div>
+```
+
+Import the icons from their respective directory:
+
+- 24x24 outline: `@sidekickicons/svelte/24/outline`
+- 24x24 solid: `@sidekickicons/svelte/24/solid`
+- 20x20 solid: `@sidekickicons/svelte/20/solid`
+- 16x16 solid: `@sidekickicons/svelte/16/solid`
+
+Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
+
+[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/dist/svelte/24/outline/)
+
+The imported components are simple Svelte components that accept the `class` prop. The component already includes the `size-6`, `size-5`, or `size-4` class, so the `class` adds any additional classes you want to apply.
+
 ### Rails
 
 In Rails, you can use Heroicons and Sidekickicons using [Rails Icons](https://github.com/Rails-Designer/rails_icons).
