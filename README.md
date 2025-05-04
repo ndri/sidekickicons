@@ -16,7 +16,7 @@ Unfortunately, I can't contribute these icons to the Heroicons repository. From 
 
 So I am sharing these icons in my own library as a Sidekick to the Hero.
 
-Browse them at [sidekickicons.andri.io](https://sidekickicons.andri.io/).
+Browse them at [sidekickicons.com](https://sidekickicons.com/).
 
 ## List of available icons
 
@@ -74,7 +74,7 @@ Browse them at [sidekickicons.andri.io](https://sidekickicons.andri.io/).
 
 ## Usage
 
-These icons can be used exactly like Heroicons. You can copy the SVG source of an icon from [sidekickicons.andri.io](https://sidekickicons.andri.io/) and inline it directly into your HTML:
+These icons can be used exactly like Heroicons. You can copy the SVG source of an icon from [sidekickicons.com](https://sidekickicons.com/) and inline it directly into your HTML:
 
 ```html
 <svg
