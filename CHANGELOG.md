@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.13.0] - 2025-05-24
+
+### Added
+
+- Add new icons (`dots-3x3`, `dots-2x2`, `radial-rays`, `circle-dashed`)
+
+### Changed
+
+- Made `dots-3x2` and `dots-2x3` icons more consistent with other dot icons
+
 ## [0.12.0] - 2025-01-26
 
 ### Added
@@ -116,7 +126,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.12.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.13.0...HEAD
+[0.13.0]: https://github.com/ndri/sidekickicons/compare/v0.12.0...v0.13.0
 [0.12.0]: https://github.com/ndri/sidekickicons/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/ndri/sidekickicons/compare/v0.10.0...v0.11.0
 [0.10.0]: https://github.com/ndri/sidekickicons/compare/v0.9.1...v0.10.0
