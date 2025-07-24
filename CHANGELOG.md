@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.14.0] - 2025-07-24
+
+### Added
+
+- Add new icons (`arrow-path-single-clockwise`, `arrow-path-single-counter-clockwise`, `archive-box-arrow-up`)
+
+### Changed
+
+- Fix centering of `radial-rays` solid24 icon
+
 ## [0.13.0] - 2025-05-24
 
 ### Added
@@ -126,7 +136,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.13.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.14.0...HEAD
+[0.14.0]: https://github.com/ndri/sidekickicons/compare/v0.13.0...v0.14.0
 [0.13.0]: https://github.com/ndri/sidekickicons/compare/v0.12.0...v0.13.0
 [0.12.0]: https://github.com/ndri/sidekickicons/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/ndri/sidekickicons/compare/v0.10.0...v0.11.0
