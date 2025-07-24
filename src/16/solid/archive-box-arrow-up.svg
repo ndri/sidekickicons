@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 16 16"
+   fill="currentColor"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="archive-box-arrow-up.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   width="16"
+   height="16"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="39.530134"
+     inkscape:cx="6.5266665"
+     inkscape:cy="6.779638"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="1512"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.5"
+       spacingy="0.5"
+       empcolor="#0099e5"
+       empopacity="0.6"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="2"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+    <inkscape:grid
+       id="grid2"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="4"
+       spacingy="4"
+       empcolor="#e50000"
+       empopacity="0.6"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="1"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <path
+     id="path1"
+     style="fill:#000000"
+     d="M 2,3 C 2,2.44772 2.44772,2 3,2 h 10 c 0.5523,0 1,0.44772 1,1 v 1 c 0,0.55228 -0.4477,1 -1,1 H 3 C 2.44772,5 2,4.55228 2,4 Z m 1,3 v 6 c 0,1.104599 0.8954311,2 2,2 h 6 c 1.104599,0 2,-0.895401 2,-2 V 6 Z m 5,1 c 0.1919423,0 0.3848051,0.0723 0.53125,0.21875 l 2.5,2.5 c 0.2929,0.29286 0.2929,0.76961 0,1.0625 -0.2929,0.29289 -0.76957,0.29289 -1.0625,0 L 8.75,9.5605469 V 12.25 C 8.75,12.66421 8.4142096,13 8,13 7.5857904,13 7.25,12.66421 7.25,12.25 V 9.5605469 L 6.03125,10.78125 c -0.2928897,0.29289 -0.7696103,0.29289 -1.0625,0 -0.2928897,-0.29289 -0.2928897,-0.76964 0,-1.0625 l 2.5,-2.5 C 7.6151949,7.0723001 7.8080577,7 8,7 Z" />
+</svg>
