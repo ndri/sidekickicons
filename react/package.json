@@ -7,7 +7,7 @@
   "homepage": "https://github.com/ndri/sidekickicons#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ndri/sidekickicons.git"
+    "url": "git+https://github.com/ndri/sidekickicons.git"
   },
   "files": [
     "16",
