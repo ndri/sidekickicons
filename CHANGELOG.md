@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.15.0] - 2026-01-13
+
+### Added
+
+- Add new icons (`face-meh`, `arrow-bottom-left-on-square`)
+
 ## [0.14.0] - 2025-07-24
 
 ### Added
@@ -136,7 +142,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.14.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.15.0...HEAD
+[0.15.0]: https://github.com/ndri/sidekickicons/compare/v0.14.0...v0.15.0
 [0.14.0]: https://github.com/ndri/sidekickicons/compare/v0.13.0...v0.14.0
 [0.13.0]: https://github.com/ndri/sidekickicons/compare/v0.12.0...v0.13.0
 [0.12.0]: https://github.com/ndri/sidekickicons/compare/v0.11.0...v0.12.0
