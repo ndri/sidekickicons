@@ -164,6 +164,44 @@ Icons use an upper camel case naming convention and are always suffixed with the
 
 The imported components are simple Svelte components that accept the `class` prop. The component already includes the `size-6`, `size-5`, or `size-4` class, so the `class` adds any additional classes you want to apply.
 
+### React Native
+
+First, install [`@sidekickicons/react-native`](https://github.com/ndri/sidekickicons-react-native) and [`react-native-svg`](https://github.com/software-mansion/react-native-svg) from npm:
+
+```sh
+npm install @sidekickicons/react-native react-native-svg
+```
+
+In an Expo app, install `react-native-svg` with `npx expo install react-native-svg` so its version matches your SDK.
+
+Now each icon can be imported and used as a React Native component. Since there is no official React Native package for Heroicons, the [`@sidekickicons/react-native`](https://github.com/ndri/sidekickicons-react-native) package includes Heroicons as well.
+
+```jsx
+import { CrownIcon, BeakerIcon } from '@sidekickicons/react-native/24/solid'
+
+function MyComponent() {
+  return (
+    <View>
+      <CrownIcon color="#3b82f6" />
+      <BeakerIcon size={32} color="#22c55e" />
+    </View>
+  )
+}
+```
+
+Import the icons from their respective directory:
+
+- 24x24 outline: `@sidekickicons/react-native/24/outline`
+- 24x24 solid: `@sidekickicons/react-native/24/solid`
+- 20x20 solid: `@sidekickicons/react-native/20/solid`
+- 16x16 solid: `@sidekickicons/react-native/16/solid`
+
+Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
+
+[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@sidekickicons/react-native/24/outline/)
+
+The icons are drawn with react-native-svg, so they work on Android, iOS and the web. They accept a `size` prop (defaults to 24, 20 or 16), a `color` prop, and any other `Svg` prop.
+
 ### Rails
 
 In Rails, you can use Heroicons and Sidekickicons using [Rails Icons](https://github.com/Rails-Designer/rails_icons).
