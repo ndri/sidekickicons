@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.16.0] - 2026-10-29
+
+### Changed
+
+- Generate every icon from a code definition instead of drawing it by hand. Icons look the same except:
+  - Redesign the micro `dice` icon as a flat die showing five, and round the corners of the other `dice` icons
+  - Show two letters instead of three in the micro `lettered-list` icon, so they stay legible
+  - Make strokes and cut-outs in mini and micro icons consistently 1.5 wide, like Heroicons (slightly bolder mini `lettered-list` letters, slightly wider gaps in a few others)
+  - Fix the solid `chevron-down-up`, `chevron-left-right` and `chevron-right-left` icons being slightly off the pixel grid
+
 ## [0.15.0] - 2026-01-13
 
 ### Added
