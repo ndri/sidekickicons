@@ -16,6 +16,8 @@
   "scripts": {
     "prepublishOnly": "pnpm build",
     "lint": "node ./scripts/verify-names.js",
+    "typecheck": "tsc",
+    "compare": "node compiler/compare.ts",
     "prebuild": "rimraf ./{16,20,24} ./{vue,react}/{16,20,24} ./optimized/{16,20,24}",
     "build": "pnpm build-24-outline && pnpm build-20-solid && pnpm build-24-solid && pnpm build-16-solid && pnpm build-react && pnpm build-vue",
     "build-react": "node ./scripts/build.js react",
@@ -30,11 +32,15 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@resvg/resvg-js": "2.6.2",
     "@svgr/core": "^5.5.0",
+    "@types/node": "24",
     "@vue/compiler-dom": "^3.0.5",
     "camelcase": "^6.0.0",
+    "canvaskit-wasm": "0.42.0",
     "prettier": "^2.8.7",
     "rimraf": "^3.0.2",
-    "svgo": "^3.0.2"
+    "svgo": "^3.0.2",
+    "typescript": "5.9.3"
   }
 }
