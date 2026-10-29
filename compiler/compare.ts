@@ -1,6 +1,6 @@
-// Compiles the definitions in icons/ and compares them with the handmade SVGs in optimized/.
-// Prints how much each variant differs, then writes the computed SVGs and a comparison sheet
-// (handmade, computed, difference) per icon to computed/.
+// Compiles the definitions in icons/ and compares them with the last build in optimized/, so it
+// shows what the next build will change. Prints how much each variant differs, then writes the
+// computed SVGs and a comparison sheet (built, computed, difference) per icon to computed/.
 //
 //   pnpm compare [icon names...]
 
@@ -10,14 +10,14 @@ import CanvasKitInit from 'canvaskit-wasm'
 import { compileIcon, variants, type Variant } from './compile.ts'
 import type { IconDefinition } from './dsl.ts'
 
-type Row = { variant: Variant; handmade?: string; computed: string; difference?: number }
+type Row = { variant: Variant; built?: string; computed: string; difference?: number }
 
 const root = new URL('../', import.meta.url)
 const out = new URL('computed/', root)
 
 // Pixels per icon unit when measuring the difference
 const ZOOM = 16
-const HANDMADE = '#e11d48'
+const BUILT = '#e11d48'
 const COMPUTED = '#2563eb'
 const OVERLAP = '#d1d5db'
 
@@ -38,12 +38,11 @@ for (const name of names) {
     if (!svg) continue
     await mkdir(new URL(`${variant}/`, out), { recursive: true })
     await writeFile(new URL(`${variant}/${name}.svg`, out), svg)
-    const handmade = await readFile(
-      new URL(`optimized/${variant}/${name}.svg`, root),
-      'utf8'
-    ).catch(() => undefined)
-    const difference = handmade ? mismatch(handmade, svg, size(variant)) : undefined
-    rows.push({ variant, handmade, computed: svg, difference })
+    const built = await readFile(new URL(`optimized/${variant}/${name}.svg`, root), 'utf8').catch(
+      () => undefined
+    )
+    const difference = built ? mismatch(built, svg, size(variant)) : undefined
+    rows.push({ variant, built, computed: svg, difference })
   }
   const cells = variants.map((variant) => {
     const row = rows.find((row) => row.variant === variant)
@@ -82,7 +81,7 @@ function sheet(rows: Row[]): Buffer {
   const gap = 16
   const label = 120
   const header = 40
-  const columns = ['handmade', 'computed', 'difference']
+  const columns = ['built', 'computed', 'difference']
   const x = (column: number) => label + column * (panel + gap)
   let body = columns.map((title, column) => text(x(column), 24, title)).join('')
   rows.forEach((row, index) => {
@@ -90,13 +89,13 @@ function sheet(rows: Row[]): Buffer {
     const units = size(row.variant)
     body += text(0, y + 18, row.variant) + text(0, y + 40, `${percent(row.difference)} off`)
     body += columns.map((_, column) => grid(x(column), y, panel, units)).join('')
-    if (row.handmade) {
-      // Red where only the handmade icon is, blue where only the computed one is, gray where both are
+    if (row.built) {
+      // Red where only the built icon is, blue where only the computed one is, gray where both are
       const mask = `overlap-${index}`
-      body += nest(row.handmade, x(0), y, panel, '#111827')
-      body += nest(row.handmade, x(2), y, panel, HANDMADE)
+      body += nest(row.built, x(0), y, panel, '#111827')
+      body += nest(row.built, x(2), y, panel, BUILT)
       body += nest(row.computed, x(2), y, panel, COMPUTED)
-      body += `<mask id="${mask}">${nest(row.handmade, x(2), y, panel, 'white')}</mask>`
+      body += `<mask id="${mask}">${nest(row.built, x(2), y, panel, 'white')}</mask>`
       body += `<g mask="url(#${mask})">${nest(row.computed, x(2), y, panel, OVERLAP)}</g>`
     }
     body += nest(row.computed, x(1), y, panel, '#111827')

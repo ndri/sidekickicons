@@ -1,3 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-  <path d="M7.5 3v14h9.25A2.25 2.25 0 0 0 19 14.75v-9.5A2.25 2.25 0 0 0 16.75 3ZM3.25 3H6v14H3.25A2.25 2.25 0 0 1 1 14.75v-9.5A2.25 2.25 0 0 1 3.25 3Z"/>
+  <path fill-rule="evenodd" d="M6 3H3.25q-.932 0-1.591.659Q1 4.318 1 5.25v9.5q0 .932.659 1.591Q2.318 17 3.25 17H6V3Zm1.5 14h9.25q.932 0 1.591-.659.659-.659.659-1.591v-9.5q0-.932-.659-1.591Q17.682 3 16.75 3H7.5v14Z" clip-rule="evenodd"/>
 </svg>

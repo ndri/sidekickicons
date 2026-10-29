@@ -6,6 +6,9 @@ export type Variant = (typeof variants)[number]
 
 // Skia's stroker and path ops are tuned for pixel coordinates, so do the geometry at 100x
 const SCALE = 100
+// At 100x the stroker's default precision makes far more curves than an icon needs. This keeps the
+// edges within about 0.01 units while making the solid SVGs about a fifth smaller.
+const STROKE_PRECISION = 0.25
 
 /** Compiles a definition to SVG files, keyed by variant. Sizes the definition leaves out are skipped. */
 export function compileIcon(ck: CanvasKit, icon: IconDefinition): Partial<Record<Variant, string>> {
@@ -49,6 +52,7 @@ function solidPathData(ck: CanvasKit, shapes: Shape[]): string {
       width: PEN * SCALE,
       cap: ck.StrokeCap.Round,
       join: ck.StrokeJoin.Round,
+      precision: STROKE_PRECISION,
     })
     if (!region) throw new Error(`Couldn't stroke ${shape.d}`)
     if (shape.closed && !shape.hollow) {
