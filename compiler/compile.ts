@@ -47,27 +47,61 @@ function svg(size: number, svgAttributes: string, pathAttributes: string): strin
 function solidPathData(ck: CanvasKit, shapes: Shape[]): string {
   let result = new ck.Path()
   for (const shape of shapes) {
-    const centerline = scaledPath(ck, shape.d)
-    let region = centerline.makeStroked({
-      width: PEN * SCALE,
-      cap: ck.StrokeCap.Round,
-      join: ck.StrokeJoin.Round,
-      precision: STROKE_PRECISION,
-    })
-    if (!region) throw new Error(`Couldn't stroke ${shape.d}`)
-    if (shape.closed && !shape.hollow) {
-      const single = contours(ck, centerline).length === 1
-      region = combine(ck, region, centerline, ck.PathOp.Union)
-      // Skia's stroke of a curve tighter than the pen leaves a hole in the middle. A filled
-      // single contour grown by the pen can't have holes, so fill them.
-      if (single) region = withoutHoles(ck, region)
-    } else centerline.delete()
     const op = shape.role === 'cut' ? ck.PathOp.Difference : ck.PathOp.Union
-    result = combine(ck, result, region, op)
+    result = combine(ck, result, shapeRegion(ck, shape, true), op)
   }
   const d = pathData(ck, result)
   result.delete()
   return d
+}
+
+/**
+ * The area a shape covers, at 100x: the pen's trace, plus the area it encloses when it's filled. A
+ * wider pen than usual finds shapes near a point too.
+ */
+function shapeRegion(ck: CanvasKit, shape: Shape, filled: boolean, pen = PEN): Path {
+  const centerline = scaledPath(ck, shape.d)
+  let region = centerline.makeStroked({
+    width: pen * SCALE,
+    cap: ck.StrokeCap.Round,
+    join: ck.StrokeJoin.Round,
+    precision: STROKE_PRECISION,
+  })
+  if (!region) throw new Error(`Couldn't stroke ${shape.d}`)
+  if (filled && shape.closed && !shape.hollow) {
+    const single = contours(ck, centerline).length === 1
+    region = combine(ck, region, centerline, ck.PathOp.Union)
+    // Skia's stroke of a curve tighter than the pen leaves a hole in the middle. A filled
+    // single contour grown by the pen can't have holes, so fill them.
+    if (single) region = withoutHoles(ck, region)
+  } else centerline.delete()
+  return region
+}
+
+/**
+ * The shapes of a variant drawn at a point, or if none are, the ones within half a unit of it. In
+ * drawing order, so the last one is on top.
+ */
+export function shapesAt(
+  ck: CanvasKit,
+  icon: IconDefinition,
+  variant: Variant,
+  [x, y]: [number, number]
+): Shape[] {
+  const outline = variant === '24/outline'
+  const shapes = (icon[parseInt(variant) as 24 | 20 | 16] ?? []).filter(
+    (shape) => shape.style !== (outline ? 'solid' : 'outline')
+  )
+  for (const pen of [PEN, PEN + 1]) {
+    const found = shapes.filter((shape) => {
+      const region = shapeRegion(ck, shape, !outline, pen)
+      const inside = region.contains(x * SCALE, y * SCALE)
+      region.delete()
+      return inside
+    })
+    if (found.length) return found
+  }
+  return []
 }
 
 /** Combines two paths and deletes them, since Skia's objects live outside JS garbage collection. */

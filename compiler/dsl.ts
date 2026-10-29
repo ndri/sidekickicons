@@ -12,13 +12,16 @@ export type Corner = [x: number, y: number, radius?: number]
 export class Shape {
   d: string
   closed: boolean
+  /** How the shape was made, like `circle(12, 12, 9)`, to point at it in its definition. */
+  label: string
   role: 'body' | 'cut' = 'body'
   hollow = false
   style: Style | undefined = undefined
 
-  constructor(d: string, closed: boolean) {
+  constructor(d: string, closed: boolean, label = '') {
     this.d = d
     this.closed = closed
+    this.label = label
   }
 
   /** In solid styles, erase this shape from what was drawn before it instead of adding it. */
@@ -66,6 +69,7 @@ export function icon(definition: IconDefinition): IconDefinition {
 export function scaled(shapes: Shape[], factor: number, dx = 0, dy = 0): Shape[] {
   return shapes.map((shape) =>
     Object.assign(new Shape(transformPathData(shape.d, factor, dx, dy), shape.closed), {
+      label: `${shape.label}, scaled`,
       role: shape.role,
       hollow: shape.hollow,
       style: shape.style,
@@ -77,16 +81,28 @@ export function n(value: number): string {
   return String(Math.round(value * 1000) / 1000 || 0)
 }
 
+/** Writes a call to a shape function, like `polygon([3, 7.5], [12, 2.25])`. */
+function call(name: string, ...args: (number | Corner)[]): string {
+  const format = (arg: number | Corner) =>
+    typeof arg === 'number'
+      ? n(arg)
+      : `[${arg
+          .filter((v) => v !== undefined)
+          .map(n)
+          .join(', ')}]`
+  return `${name}(${args.map(format).join(', ')})`
+}
+
 export function line(x1: number, y1: number, x2: number, y2: number): Shape {
-  return new Shape(`M${n(x1)} ${n(y1)}L${n(x2)} ${n(y2)}`, false)
+  return new Shape(`M${n(x1)} ${n(y1)}L${n(x2)} ${n(y2)}`, false, call('line', x1, y1, x2, y2))
 }
 
 export function polyline(...corners: Corner[]): Shape {
-  return new Shape(cornerPathData(corners, false), false)
+  return new Shape(cornerPathData(corners, false), false, call('polyline', ...corners))
 }
 
 export function polygon(...corners: Corner[]): Shape {
-  return new Shape(cornerPathData(corners, true), true)
+  return new Shape(cornerPathData(corners, true), true, call('polygon', ...corners))
 }
 
 /** Straight lines between the corners, with an arc of the given radius at each rounded corner. */
@@ -116,11 +132,12 @@ function cornerPathData(corners: Corner[], closed: boolean): string {
 
 export function ellipse(cx: number, cy: number, rx: number, ry: number): Shape {
   const arc = (dx: number) => `a${n(rx)} ${n(ry)} 0 1 0 ${n(dx)} 0`
-  return new Shape(`M${n(cx - rx)} ${n(cy)}${arc(2 * rx)}${arc(-2 * rx)}Z`, true)
+  const d = `M${n(cx - rx)} ${n(cy)}${arc(2 * rx)}${arc(-2 * rx)}Z`
+  return new Shape(d, true, call('ellipse', cx, cy, rx, ry))
 }
 
 export function circle(cx: number, cy: number, r: number): Shape {
-  return ellipse(cx, cy, r, r)
+  return Object.assign(ellipse(cx, cy, r, r), { label: call('circle', cx, cy, r) })
 }
 
 export function rect(x: number, y: number, width: number, height: number, radius = 0): Shape {
@@ -129,13 +146,14 @@ export function rect(x: number, y: number, width: number, height: number, radius
   return new Shape(
     `M${n(x + r)} ${n(y)}h${n(width - 2 * r)}${corner(r, r)}v${n(height - 2 * r)}${corner(-r, r)}` +
       `h${n(2 * r - width)}${corner(-r, -r)}v${n(2 * r - height)}${corner(r, -r)}Z`,
-    true
+    true,
+    call('rect', x, y, width, height, ...(radius ? [radius] : []))
   )
 }
 
 /** A round dot as wide as the pen, drawn the way Heroicons draw them. */
 export function dot(x: number, y: number): Shape {
-  return new Shape(`M${n(x)} ${n(y)}h.008v.008h-.008Z`, true)
+  return new Shape(`M${n(x)} ${n(y)}h.008v.008h-.008Z`, true, call('dot', x, y))
 }
 
 /** Any SVG path data. Its subpaths must be either all closed or all open. */
@@ -145,7 +163,8 @@ export function path(d: string): Shape {
   if (closed.some((c) => c !== closed[0])) {
     throw new Error(`Split open and closed subpaths into separate shapes: ${d}`)
   }
-  return new Shape(d.trim(), closed[0])
+  const start = d.trim().length > 40 ? `${d.trim().slice(0, 40)}…` : d.trim()
+  return new Shape(d.trim(), closed[0], `path('${start}')`)
 }
 
 // How many numbers each SVG path command takes

@@ -31,6 +31,18 @@ pnpm typecheck
 definition, gray = both). **Look at that image** (it's how you see your work); the numbers only tell you
 where to look. For a new icon there is no build yet, so the sheet just shows the computed icon.
 
+Change requests often come as prompts like this one, pointing at a spot on a computed icon:
+
+```
+sidekickicons/icons/face-meh.ts, 24/solid at (9.3, 9.8)
+Shapes there, bottom to top: circle(12, 12, 9); ellipse(9.375, 9.75, 0.375, 0.75) (cut)
+Make the eyes a little rounder
+Check the result with `pnpm compare face-meh`.
+```
+
+The shapes are named the way they were made, so search the file for them; ones made by a local helper or
+`scaled()` show the computed numbers rather than the source.
+
 ## How icons are drawn
 
 Every shape is a **centerline traced by a round pen 1.5 units wide** (round caps and joins), like Heroicons.
