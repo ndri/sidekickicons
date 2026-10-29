@@ -100,3 +100,21 @@ Good examples: `face-meh.ts` and `compass.ts` (solid-only shapes, small sizes wr
   renderers. Add a `dot()` at its center with `.outlineOnly()`, as Heroicons does.
 - svgo approximates curves with arcs, so `pnpm compare` can show up to about 1% against the build for icons
   made of many small curves (`circle-dashed`). That's svgo, not the definition.
+
+## Releasing
+
+Releases are minor versions (0.x.0) and touch four repos, in this order. Publishing to npm needs the
+maintainer, who is logged in to npm; everything else can be prepared for them.
+
+1. Bump the version in `package.json`, `react/package.json` and `vue/package.json`. In `CHANGELOG.md`, move
+   the Unreleased entries under a new `## [x.y.z] - date` heading and update the link references at the
+   bottom (`[unreleased]` compares from the new tag, plus a new `[x.y.z]` line).
+2. `pnpm build`, commit as `vx.y.z`, and push `master`.
+3. Tag that commit `vx.y.z` (a lightweight tag), push the tag, and create a GitHub release named `vx.y.z`
+   with that version's changelog section as its notes.
+4. `npm publish` in `react/` and `vue/`. The root `sidekickicons` package isn't published.
+5. `sidekickicons-svelte` and `sidekickicons-react-native` download `optimized/` from GitHub's `master`, so
+   only after step 2 is pushed: bump their version, `pnpm build`, commit as `vx.y.z`, `npm publish`, push.
+   These two take a few minutes to appear on npm after publishing.
+6. Once `@sidekickicons/react` is on npm, `sidekickicons-site` gets `pnpm add @sidekickicons/react@^x.y.z`, a
+   build, a commit and a push to `main`, which Vercel deploys.
