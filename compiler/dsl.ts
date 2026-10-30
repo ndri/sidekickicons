@@ -14,7 +14,11 @@ export class Shape {
   closed: boolean
   /** How the shape was made, like `circle(12, 12, 9)`, to point at it in its definition. */
   label: string
-  role: 'body' | 'cut' = 'body'
+  /**
+   * A body adds itself, a cut erases itself in solid styles. A trim isn't drawn: in the outline, it
+   * stops the strokes before it where they enter its area.
+   */
+  role: 'body' | 'cut' | 'trim' = 'body'
   hollow = false
   style: Style | undefined = undefined
 
@@ -151,6 +155,41 @@ export function rect(x: number, y: number, width: number, height: number, radius
   )
 }
 
+// Where a slash starts and ends, on the diagonal, at each size
+const SLASH_ENDS = { 24: [3, 21], 20: [2.75, 17.25], 16: [2.75, 13.25] } as const
+
+/**
+ * A slash from the top left to the bottom right, crossing out the shapes listed before it, like
+ * Heroicons' `-slash` icons. The solid erases a pen-wide gap on both sides of it. The outline runs
+ * strokes on its top right side into it and stops the ones on its bottom left side a pen-wide gap
+ * away from it.
+ */
+export function slash(size: 24 | 20 | 16): Shape[] {
+  const o = PEN / Math.SQRT2
+  const gap = new Shape(
+    `M${n(o)} ${n(-o)}L${n(size + o)} ${n(size - o)}L${n(size - o)} ${n(size + o)}L${n(-o)} ${n(
+      o
+    )}Z`,
+    true,
+    `${call('slash', size)}, gap`
+  )
+    .cut()
+    .solidOnly()
+  // From the slash's centerline to 3 below it: half the slash, the gap and a stroke's round cap
+  const [a, b] = [-PEN, size + PEN]
+  const below = 3 / Math.SQRT2
+  const trim = new Shape(
+    `M${n(a)} ${n(a)}L${n(b)} ${n(b)}L${n(b - below)} ${n(b + below)}L${n(a - below)} ${n(
+      a + below
+    )}Z`,
+    true,
+    `${call('slash', size)}, trim`
+  ).outlineOnly()
+  trim.role = 'trim'
+  const [from, to] = SLASH_ENDS[size]
+  return [gap, trim, Object.assign(line(from, from, to, to), { label: call('slash', size) })]
+}
+
 /** A round dot as wide as the pen, drawn the way Heroicons draw them. */
 export function dot(x: number, y: number): Shape {
   return new Shape(`M${n(x)} ${n(y)}h.008v.008h-.008Z`, true, call('dot', x, y))
@@ -164,7 +203,10 @@ export function path(d: string): Shape {
     throw new Error(`Split open and closed subpaths into separate shapes: ${d}`)
   }
   const start = d.trim().length > 40 ? `${d.trim().slice(0, 40)}…` : d.trim()
-  return new Shape(d.trim(), closed[0], `path('${start}')`)
+  // A leading m is absolute on its own, but the outline joins shapes' path data, after which it
+  // would move relative to the shape before. Rewritten with an M, the numbers after it need l.
+  const data = /^m/.test(d.trim()) ? transformPathData(d.trim(), 1, 0, 0) : d.trim()
+  return new Shape(data, closed[0], `path('${start}')`)
 }
 
 // How many numbers each SVG path command takes
@@ -204,6 +246,9 @@ function transformPathData(d: string, factor: number, dx: number, dy: number): s
   for (skip(); i < d.length; skip()) {
     if (/[a-z]/i.test(d[i])) command = d[i++]
     else if (!command) throw new Error(`Expected a command at ${i} in ${d}`)
+    // A path's first moveto is absolute even when written as m, though the numbers after it aren't
+    const relative = command === command.toLowerCase()
+    if (!out && command === 'm') command = 'M'
     const type = command.toLowerCase()
     if (!(type in ARGUMENTS)) throw new Error(`Unknown path command ${command} in ${d}`)
     const absolute = command !== type
@@ -220,7 +265,7 @@ function transformPathData(d: string, factor: number, dx: number, dy: number): s
     }
     out += command + values.map(n).join(' ')
     // Numbers repeated after a moveto are linetos, and closepath takes none
-    if (type === 'm') command = absolute ? 'L' : 'l'
+    if (type === 'm') command = relative ? 'l' : 'L'
     if (type === 'z') command = ''
   }
   return out

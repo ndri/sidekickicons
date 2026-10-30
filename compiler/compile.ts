@@ -1,4 +1,4 @@
-import type { CanvasKit, Path, PathOp } from 'canvaskit-wasm'
+import type { CanvasKit, ContourMeasure, Path, PathOp } from 'canvaskit-wasm'
 import { PEN, n, type IconDefinition, type Shape } from './dsl.ts'
 
 export const variants = ['24/outline', '24/solid', '20/solid', '16/solid'] as const
@@ -17,11 +17,14 @@ export function compileIcon(ck: CanvasKit, icon: IconDefinition): Partial<Record
     const shapes = icon[size]
     if (!shapes) continue
     if (size === 24) {
-      const d = shapes.filter((shape) => shape.style !== 'solid').map((shape) => shape.d)
+      const d = outlinePathData(
+        ck,
+        shapes.filter((shape) => shape.style !== 'solid')
+      )
       svgs['24/outline'] = svg(
         size,
         `fill="none" stroke="currentColor" stroke-width="${PEN}"`,
-        `stroke-linecap="round" stroke-linejoin="round" d="${d.join('')}"`
+        `stroke-linecap="round" stroke-linejoin="round" d="${d}"`
       )
     }
     const d = solidPathData(
@@ -42,6 +45,80 @@ function svg(size: number, svgAttributes: string, pathAttributes: string): strin
     `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" ` +
     `viewBox="0 0 ${size} ${size}" ${svgAttributes}>\n  <path ${pathAttributes}/>\n</svg>\n`
   )
+}
+
+/** The centerlines of the shapes, each trim stopping the ones before it. */
+function outlinePathData(ck: CanvasKit, shapes: Shape[]): string {
+  let drawn: string[] = []
+  for (const shape of shapes) {
+    if (shape.role !== 'trim') {
+      drawn.push(shape.d)
+      continue
+    }
+    const area = scaledPath(ck, shape.d)
+    drawn = drawn.map((d) => trimmed(ck, d, area))
+    area.delete()
+  }
+  return drawn.join('')
+}
+
+// How far apart, in icon units, to test points along a centerline for whether a trim covers them
+const TRIM_STEP = 0.02
+
+/**
+ * The parts of a centerline outside an area, cut along its curves. Unchanged when the area doesn't
+ * touch it, so untouched shapes keep their own path data.
+ */
+function trimmed(ck: CanvasKit, d: string, area: Path): string {
+  const path = scaledPath(ck, d)
+  const iterator = new ck.ContourMeasureIter(path, false, 1)
+  const kept: string[] = []
+  let touched = false
+  for (let contour = iterator.next(); contour; contour = iterator.next()) {
+    const measure = contour
+    const length = measure.length()
+    const outside = (distance: number) => {
+      const [x, y] = measure.getPosTan(distance)
+      return !area.contains(x, y)
+    }
+    // Where the inside and outside meet, to well under a hundredth of a unit
+    const edge = (from: number, to: number) => {
+      const fromOutside = outside(from)
+      for (let i = 0; i < 12; i++) {
+        const middle = (from + to) / 2
+        if (outside(middle) === fromOutside) from = middle
+        else to = middle
+      }
+      return (from + to) / 2
+    }
+    const step = TRIM_STEP * SCALE
+    let start = outside(0) ? 0 : undefined
+    if (start === undefined) touched = true
+    let previous = 0
+    for (let distance = Math.min(step, length); ; distance = Math.min(distance + step, length)) {
+      const out = outside(distance)
+      if (!out) touched = true
+      if (out && start === undefined) start = edge(previous, distance)
+      if (!out && start !== undefined) {
+        kept.push(segment(ck, measure, start, edge(previous, distance)))
+        start = undefined
+      }
+      previous = distance
+      if (distance === length) break
+    }
+    if (start !== undefined) kept.push(segment(ck, measure, start, length))
+    measure.delete()
+  }
+  iterator.delete()
+  path.delete()
+  return touched ? kept.join('') : d
+}
+
+function segment(ck: CanvasKit, contour: ContourMeasure, from: number, to: number): string {
+  const part = contour.getSegment(from, to, true)
+  const d = pathData(ck, part)
+  part.delete()
+  return d
 }
 
 function solidPathData(ck: CanvasKit, shapes: Shape[]): string {
@@ -90,7 +167,7 @@ export function shapesAt(
 ): Shape[] {
   const outline = variant === '24/outline'
   const shapes = (icon[parseInt(variant) as 24 | 20 | 16] ?? []).filter(
-    (shape) => shape.style !== (outline ? 'solid' : 'outline')
+    (shape) => shape.style !== (outline ? 'solid' : 'outline') && shape.role !== 'trim'
   )
   for (const pen of [PEN, PEN + 1]) {
     const found = shapes.filter((shape) => {

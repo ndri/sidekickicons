@@ -62,13 +62,17 @@ Every shape is a **centerline traced by a round pen 1.5 units wide** (round caps
   (a pen-sized dot), `path(d)` for anything else (its subpaths must be all closed or all open). Polygon and
   polyline points take an optional third number, the radius their corner is rounded by:
   `polygon([12, 2.25, 1.5], ...)`.
+- `slash(size)` crosses out the shapes listed before it, like Heroicons' `-slash` icons: the solid gets a
+  pen-wide gap on both sides of the slash, and the outline stops strokes on the slash's bottom left side a
+  gap away from it (its top right side runs into it). The outline's trimming follows curves, so draw the
+  whole icon and let it cut.
 - `scaled(shapes, factor, dx, dy)` scales from the origin and then moves. Many small sizes are the 24
   scaled around the center: `scaled(drawing, 29 / 36, 1 / 3, 1 / 3)` for 20 and
   `scaled(drawing, 25 / 36, -1 / 3, -1 / 3)` for 16.
 
 Good examples: `face-meh.ts` and `compass.ts` (solid-only shapes, small sizes written out),
-`blockquote.ts` (each size drawn on its own), `dots-2x2.ts` (a small local helper), `pin-slash.ts`
-(a slash cut through a base shape), `dice.ts` (helpers for a whole construction, a redesigned micro size).
+`blockquote.ts` (each size drawn on its own), `dots-2x2.ts` (a small local helper),
+`paint-brush-slash.ts` (a Heroicon with `slash()`), `dice.ts` (helpers for a whole construction, a redesigned micro size).
 
 ## Heroicons style rules
 
