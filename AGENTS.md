@@ -13,6 +13,7 @@ for icons Heroicons doesn't have. Every icon must look like it could be a Heroic
   definitions, then svgo turns it into `optimized/`. Both are committed: the README shows icons from `src/`,
   and the Svelte and React Native packages download `optimized/` from GitHub.
 - `react/` and `vue/` — the `@sidekickicons/react` and `@sidekickicons/vue` packages, built from `optimized/`.
+- `ROADMAP.md` — icons to add next, with their demand. Cross an icon off when it's added.
 - Related repos next to this one: `sidekickicons-site` (sidekickicons.com), `sidekickicons-svelte` and
   `sidekickicons-react-native`.
 
