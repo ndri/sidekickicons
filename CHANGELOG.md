@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add new icon (`keyboard`)
+- Add new icons (`keyboard`, `italic-slash`, `paint-brush-slash`, `arrow-uturn-down-right`, `arrow-uturn-up-left`, `table-cells-merge`, `table-cells-split`, `video-camera-arrow-down-left`, `video-camera-arrow-up-right`, `video-camera-x-mark`, `camera-rotate`)
+
+### Changed
+
+- Make the gap beside the slash in the outline `pin-slash` icon a full pen wide, like in the other slashed icons
 
 ## [0.16.0] - 2026-10-29
 

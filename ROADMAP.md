@@ -6,10 +6,12 @@ Icons to add next, roughly in order. Demand is the votes on matching
 
 ## Requests here
 
-- [#13](https://github.com/ndri/sidekickicons/discussions/13): `italic-slash`, `paint-brush-slash`, a mirrored
-  `arrow-uturn-down` for redo, merge and split cells
-- [#10](https://github.com/ndri/sidekickicons/discussions/10): `video-arrow-down`, `video-arrow-up-right`,
-  `video-x-mark`, `camera-rotate`, to go with Heroicons' `phone-arrow-*` icons
+- [#13](https://github.com/ndri/sidekickicons/discussions/13): ~~`italic-slash`~~, ~~`paint-brush-slash`~~,
+  ~~`arrow-uturn-down-right`~~ (a mirrored `arrow-uturn-down` for redo, with `arrow-uturn-up-left` to match),
+  ~~`table-cells-merge`~~, ~~`table-cells-split`~~
+- [#10](https://github.com/ndri/sidekickicons/discussions/10): ~~`video-camera-arrow-down-left`~~,
+  ~~`video-camera-arrow-up-right`~~, ~~`video-camera-x-mark`~~ (to go with Heroicons' `phone-arrow-*` icons),
+  ~~`camera-rotate`~~
 
 ## Next: simple shapes with demand
 
