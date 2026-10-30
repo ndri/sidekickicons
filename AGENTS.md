@@ -31,12 +31,14 @@ pnpm typecheck
 definition, gray = both). **Look at that image** (it's how you see your work); the numbers only tell you
 where to look. For a new icon there is no build yet, so the sheet just shows the computed icon.
 
-Change requests often come as prompts like this one, pointing at a spot on a computed icon:
+Change requests often come as prompts like this one, with numbered notes pinned to spots on the
+computed icons, and notes about the whole icon:
 
 ```
-sidekickicons/icons/face-meh.ts, 24/solid at (9.3, 9.8)
-Shapes there, bottom to top: circle(12, 12, 9); ellipse(9.375, 9.75, 0.375, 0.75) (cut)
-Make the eyes a little rounder
+sidekickicons/icons/face-meh.ts
+1. 24/solid at (9.3, 9.8). Shapes there, bottom to top: circle(12, 12, 9); ellipse(9.375, 9.75, 0.375, 0.75) (cut)
+   Make the eyes a little rounder
+2. Try a slightly wider mouth in every style
 Check the result with `pnpm compare face-meh`.
 ```
 
