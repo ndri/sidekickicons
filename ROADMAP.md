@@ -13,7 +13,17 @@ Icons to add next, roughly in order. Demand is the votes on matching
   ~~`video-camera-arrow-up-right`~~, ~~`video-camera-x-mark`~~ (to go with Heroicons' `phone-arrow-*` icons),
   ~~`camera-rotate`~~
 
-## Next: simple shapes with demand
+## Next batch
+
+Suggested by lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/discussions/1160#discussioncomment-19316626):
+
+- Curved 90° turn arrows, like Heroicons 1's `reply` (`M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6`), which
+  Heroicons 2 replaced with the 180° `arrow-uturn-left`. Heroicons 2's `arrow-turn-*` turn 90° but with a
+  sharp corner. Do the directions of `arrow-turn-*`, or at least reply and forward; the name is still to
+  decide.
+- The section sign (§), to go with `pilcrow`.
+
+## Done: simple shapes with demand
 
 | Icon                 | Votes | Discussions                                                                                                                                                                                                 | Notes                                                                                          |
 | -------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -30,6 +40,7 @@ Icons to add next, roughly in order. Demand is the votes on matching
 
 ## After that: easy to medium
 
+- `crosshair`, a ring with four ticks for "use my location": 7 ([#344](https://github.com/tailwindlabs/heroicons/discussions/344), which asks for this rather than `target`)
 - Gender symbols: 17 ([#724](https://github.com/tailwindlabs/heroicons/discussions/724), [#1402](https://github.com/tailwindlabs/heroicons/discussions/1402))
 - `leaf`: 16 ([#453](https://github.com/tailwindlabs/heroicons/discussions/453), [#444](https://github.com/tailwindlabs/heroicons/discussions/444))
 - `gauge` or speedometer: 14 ([#816](https://github.com/tailwindlabs/heroicons/discussions/816), [#897](https://github.com/tailwindlabs/heroicons/discussions/897), [#1364](https://github.com/tailwindlabs/heroicons/discussions/1364))
@@ -55,6 +66,11 @@ Icons to add next, roughly in order. Demand is the votes on matching
 - Medical: 14 ([#1029](https://github.com/tailwindlabs/heroicons/discussions/1029))
 - Handshake: 12 ([#442](https://github.com/tailwindlabs/heroicons/discussions/442))
 - Apple (the fruit)
+
+## Backlog
+
+- Animated icons: a way to animate Heroicons and Sidekickicons, maybe generated with an AI model
+  ([heroicons#1160](https://github.com/tailwindlabs/heroicons/discussions/1160#discussioncomment-19316626))
 
 ## Improvements
 
