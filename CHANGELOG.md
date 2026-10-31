@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.0] - 2026-10-31
+
 ### Added
 
 - Add new icons (`target`, `coffee`, `star-half`, `snowflake`, `eraser`, `check-square`, `inbox-arrow-up`, `percent`, `infinity`)
@@ -164,7 +166,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.17.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.18.0...HEAD
+[0.18.0]: https://github.com/ndri/sidekickicons/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/ndri/sidekickicons/compare/v0.16.0...v0.17.0
 [0.16.0]: https://github.com/ndri/sidekickicons/compare/v0.15.0...v0.16.0
 [0.15.0]: https://github.com/ndri/sidekickicons/compare/v0.14.0...v0.15.0
