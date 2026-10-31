@@ -17,11 +17,10 @@ Icons to add next, roughly in order. Demand is the votes on matching
 
 Suggested by lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/discussions/1160#discussioncomment-19316626):
 
-- Curved 90° turn arrows, like Heroicons 1's `reply` (`M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6`), which
+- ~~`arrow-curve-*`~~: curved 90° turn arrows, like Heroicons 1's `reply` (`M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6`), which
   Heroicons 2 replaced with the 180° `arrow-uturn-left`. Heroicons 2's `arrow-turn-*` turn 90° but with a
-  sharp corner. Do the directions of `arrow-turn-*`, or at least reply and forward; the name is still to
-  decide.
-- The section sign (§), to go with `pilcrow`.
+  sharp corner. In all eight directions of `arrow-turn-*`.
+- ~~`section-sign`~~ (§), to go with `pilcrow`.
 
 ## Done: simple shapes with demand
 
@@ -40,19 +39,19 @@ Suggested by lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/her
 
 ## After that: easy to medium
 
-- `crosshair`, a ring with four ticks for "use my location": 7 ([#344](https://github.com/tailwindlabs/heroicons/discussions/344), which asks for this rather than `target`)
-- Gender symbols: 17 ([#724](https://github.com/tailwindlabs/heroicons/discussions/724), [#1402](https://github.com/tailwindlabs/heroicons/discussions/1402))
+- ~~`crosshair`~~, a ring with four ticks for "use my location": 7 ([#344](https://github.com/tailwindlabs/heroicons/discussions/344), which asks for this rather than `target`)
+- ~~Gender symbols~~ (`gender-male`, `gender-female`, `gender-trans`, `gender-ambiguous`): 17 ([#724](https://github.com/tailwindlabs/heroicons/discussions/724), [#1402](https://github.com/tailwindlabs/heroicons/discussions/1402))
 - `leaf`: 16 ([#453](https://github.com/tailwindlabs/heroicons/discussions/453), [#444](https://github.com/tailwindlabs/heroicons/discussions/444))
 - `gauge` or speedometer: 14 ([#816](https://github.com/tailwindlabs/heroicons/discussions/816), [#897](https://github.com/tailwindlabs/heroicons/discussions/897), [#1364](https://github.com/tailwindlabs/heroicons/discussions/1364))
 - `git-branch`: 12 ([#350](https://github.com/tailwindlabs/heroicons/discussions/350), [#374](https://github.com/tailwindlabs/heroicons/discussions/374)), for versions
-- Fullscreen corners: 10 ([#448](https://github.com/tailwindlabs/heroicons/discussions/448), [#633](https://github.com/tailwindlabs/heroicons/discussions/633))
-- `hourglass`: 6 ([#408](https://github.com/tailwindlabs/heroicons/discussions/408))
-- `crop`: 6 ([#990](https://github.com/tailwindlabs/heroicons/discussions/990))
+- ~~Fullscreen corners~~ (`corners-pointing-out`, `corners-pointing-in`): 10 ([#448](https://github.com/tailwindlabs/heroicons/discussions/448), [#633](https://github.com/tailwindlabs/heroicons/discussions/633))
+- ~~`hourglass`~~: 6 ([#408](https://github.com/tailwindlabs/heroicons/discussions/408))
+- ~~`crop`~~: 6 ([#990](https://github.com/tailwindlabs/heroicons/discussions/990))
 - `pill`: 5 ([#892](https://github.com/tailwindlabs/heroicons/discussions/892))
-- `circle-half`, for high contrast and an automatic light/dark theme ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1366](https://github.com/tailwindlabs/heroicons/discussions/1366))
+- ~~`circle-half-full`~~, for high contrast and an automatic light/dark theme ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1366](https://github.com/tailwindlabs/heroicons/discussions/1366))
 - Next and previous track ([#1001](https://github.com/tailwindlabs/heroicons/discussions/1001))
 - Closed captions and ad badges in the style of `gif` ([#567](https://github.com/tailwindlabs/heroicons/discussions/567))
-- `battery-25`, `battery-75`, `battery-charging`
+- ~~`battery-25`~~, ~~`battery-75`~~, `battery-charging`
 - `face-id`, a headset with a microphone, `dumbbell`, `chart-line`, `hammer`, `folder-x-mark`
 - `bluetooth`: 26 ([#625](https://github.com/tailwindlabs/heroicons/discussions/625), [#520](https://github.com/tailwindlabs/heroicons/discussions/520)), easy but a trademark
 
