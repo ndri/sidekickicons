@@ -51,6 +51,16 @@ export class Shape {
     this.style = 'solid'
     return this
   }
+
+  /**
+   * Don't draw this shape: in the outline, stop the strokes before it where they enter its area,
+   * cutting them along their curves. Solid styles ignore it.
+   */
+  trim(): this {
+    this.role = 'trim'
+    this.style = 'outline'
+    return this
+  }
 }
 
 /** Shapes for each size. 24 makes both the outline and solid style, 20 and 16 only solid. */
@@ -184,8 +194,7 @@ export function slash(size: 24 | 20 | 16): Shape[] {
     )}Z`,
     true,
     `${call('slash', size)}, trim`
-  ).outlineOnly()
-  trim.role = 'trim'
+  ).trim()
   const [from, to] = SLASH_ENDS[size]
   return [gap, trim, Object.assign(line(from, from, to, to), { label: call('slash', size) })]
 }
