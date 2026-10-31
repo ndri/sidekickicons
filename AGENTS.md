@@ -57,7 +57,9 @@ Every shape is a **centerline traced by a round pen 1.5 units wide** (round caps
   closed cut erases its area plus the pen, an open cut erases a 1.5-wide slot with round ends. A body listed
   after a cut is drawn on top of it.
 - Modifiers: `.cut()`, `.hollowed()` (a closed shape adds only its pen ring), `.outlineOnly()` and
-  `.solidOnly()` (for the parts of the 24 that differ between the two styles).
+  `.solidOnly()` (for the parts of the 24 that differ between the two styles), and `.trim()`: the shape
+  isn't drawn, but in the outline it stops the strokes before it where they enter its area, along their
+  curves (`star-half.ts` trims a star down the middle).
 - Shapes: `line`, `polyline`, `polygon`, `rect(x, y, width, height, radius)`, `circle`, `ellipse`, `dot`
   (a pen-sized dot), `path(d)` for anything else (its subpaths must be all closed or all open). Polygon and
   polyline points take an optional third number, the radius their corner is rounded by:

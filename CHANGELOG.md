@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Added
+
+- Add new icons (`target`, `coffee`, `star-half`, `snowflake`, `eraser`, `check-square`, `inbox-arrow-up`, `percent`, `infinity`)
 
 ## [0.17.0] - 2026-10-30
 
