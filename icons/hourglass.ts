@@ -15,7 +15,7 @@ const hourglass = (pile: boolean) => [
   ...(pile
     ? [
         path(BOTTOM).hollowed(),
-        path('M7.5 20.25v-3c1.5-1 3-1.5 4.5-1.5s3 .5 4.5 1.5v3Z').solidOnly(),
+        path('M7.5 20.25v-1.5c1.5-1 3-1.5 4.5-1.5s3 .5 4.5 1.5v1.5Z').solidOnly(),
       ]
     : [path(BOTTOM)]),
   // The outline's sand is half a pen or more from the glass
