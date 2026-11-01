@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.19.0] - 2026-11-01
+
 ### Added
 
 - Add new icons (`arrow-curve-up-left`, `arrow-curve-up-right`, `arrow-curve-down-left`, `arrow-curve-down-right`, `arrow-curve-left-up`, `arrow-curve-left-down`, `arrow-curve-right-up`, `arrow-curve-right-down`, `section-sign`, `crosshair`, `gender-male`, `gender-female`, `gender-trans`, `gender-ambiguous`, `corners-pointing-out`, `corners-pointing-in`, `hourglass`, `crop`, `circle-half-full`, `battery-25`, `battery-75`)
@@ -170,7 +172,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.18.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.19.0...HEAD
+[0.19.0]: https://github.com/ndri/sidekickicons/compare/v0.18.0...v0.19.0
 [0.18.0]: https://github.com/ndri/sidekickicons/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/ndri/sidekickicons/compare/v0.16.0...v0.17.0
 [0.16.0]: https://github.com/ndri/sidekickicons/compare/v0.15.0...v0.16.0
