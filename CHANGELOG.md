@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add new icons (`bluetooth`, `leaf`, `gauge`, `git-branch`, `headset`, `pill`, `forward-bar`, `backward-bar`, `anchor`)
+
 ## [0.19.0] - 2026-11-01
 
 ### Added

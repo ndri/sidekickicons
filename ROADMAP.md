@@ -21,6 +21,7 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
   Heroicons 2 replaced with the 180° `arrow-uturn-left`. Heroicons 2's `arrow-turn-*` turn 90° but with a
   sharp corner. In all eight directions of `arrow-turn-*`.
 - ~~`section-sign`~~ (§), to go with `pilcrow`.
+- ~~`anchor`~~, for links ([heroicons#1160](https://github.com/tailwindlabs/heroicons/discussions/1160#discussioncomment-19337418))
 
 ## Done: simple shapes with demand
 
@@ -40,20 +41,20 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
 ## After that: easy to medium
 
 - ~~`crosshair`~~, a ring with four ticks for "use my location": 7 ([#344](https://github.com/tailwindlabs/heroicons/discussions/344), which asks for this rather than `target`)
-- `bluetooth`: 26 ([#625](https://github.com/tailwindlabs/heroicons/discussions/625), [#520](https://github.com/tailwindlabs/heroicons/discussions/520)), the most wanted. A trademark, but Lucide and other open icon sets draw it too
+- ~~`bluetooth`~~: 26 ([#625](https://github.com/tailwindlabs/heroicons/discussions/625), [#520](https://github.com/tailwindlabs/heroicons/discussions/520)), the most wanted. A trademark, but Lucide and other open icon sets draw it too
 - ~~Gender symbols~~ (`gender-male`, `gender-female`, `gender-trans`, `gender-ambiguous`): 17 ([#724](https://github.com/tailwindlabs/heroicons/discussions/724), [#1402](https://github.com/tailwindlabs/heroicons/discussions/1402))
-- `leaf`: 16 ([#453](https://github.com/tailwindlabs/heroicons/discussions/453), [#444](https://github.com/tailwindlabs/heroicons/discussions/444))
-- `gauge` or speedometer: 14 ([#816](https://github.com/tailwindlabs/heroicons/discussions/816), [#897](https://github.com/tailwindlabs/heroicons/discussions/897), [#1364](https://github.com/tailwindlabs/heroicons/discussions/1364))
-- `git-branch`: 12 ([#350](https://github.com/tailwindlabs/heroicons/discussions/350), [#374](https://github.com/tailwindlabs/heroicons/discussions/374)), for versions
+- ~~`leaf`~~: 16 ([#453](https://github.com/tailwindlabs/heroicons/discussions/453), [#444](https://github.com/tailwindlabs/heroicons/discussions/444))
+- ~~`gauge`~~ or speedometer: 14 ([#816](https://github.com/tailwindlabs/heroicons/discussions/816), [#897](https://github.com/tailwindlabs/heroicons/discussions/897), [#1364](https://github.com/tailwindlabs/heroicons/discussions/1364))
+- ~~`git-branch`~~: 12 ([#350](https://github.com/tailwindlabs/heroicons/discussions/350), [#374](https://github.com/tailwindlabs/heroicons/discussions/374)), for versions
 - ~~Fullscreen corners~~ (`corners-pointing-out`, `corners-pointing-in`): 10 ([#448](https://github.com/tailwindlabs/heroicons/discussions/448), [#633](https://github.com/tailwindlabs/heroicons/discussions/633))
 - ~~`hourglass`~~: 6 ([#408](https://github.com/tailwindlabs/heroicons/discussions/408))
 - ~~`crop`~~: 6 ([#990](https://github.com/tailwindlabs/heroicons/discussions/990))
-- `pill`: 5 ([#892](https://github.com/tailwindlabs/heroicons/discussions/892))
+- ~~`pill`~~: 5 ([#892](https://github.com/tailwindlabs/heroicons/discussions/892))
 - ~~`circle-half-full`~~, for high contrast and an automatic light/dark theme ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1366](https://github.com/tailwindlabs/heroicons/discussions/1366))
-- Next and previous track ([#1001](https://github.com/tailwindlabs/heroicons/discussions/1001))
+- ~~Next and previous track~~ (`forward-bar`, `backward-bar`) ([#1001](https://github.com/tailwindlabs/heroicons/discussions/1001))
 - Closed captions and ad badges in the style of `gif` ([#567](https://github.com/tailwindlabs/heroicons/discussions/567))
 - ~~`battery-25`~~, ~~`battery-75`~~, `battery-charging`
-- `face-id`, a headset with a microphone, `dumbbell`, `chart-line`, `hammer`, `folder-x-mark`
+- `face-id`, ~~`headset`~~ (a headset with a microphone), `dumbbell`, `chart-line`, `hammer`, `folder-x-mark`
 
 ## Wanted, but real design work
 
