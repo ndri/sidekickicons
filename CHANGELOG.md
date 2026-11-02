@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.20.0] - 2026-11-02
+
 ### Added
 
 - Add new icons (`bluetooth`, `leaf`, `gauge`, `git-branch`, `headset`, `pill`, `forward-bar`, `backward-bar`, `anchor`)
@@ -176,7 +178,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.19.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.20.0...HEAD
+[0.20.0]: https://github.com/ndri/sidekickicons/compare/v0.19.0...v0.20.0
 [0.19.0]: https://github.com/ndri/sidekickicons/compare/v0.18.0...v0.19.0
 [0.18.0]: https://github.com/ndri/sidekickicons/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/ndri/sidekickicons/compare/v0.16.0...v0.17.0
