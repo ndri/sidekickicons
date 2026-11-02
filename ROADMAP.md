@@ -22,6 +22,9 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
   sharp corner. In all eight directions of `arrow-turn-*`.
 - ~~`section-sign`~~ (§), to go with `pilcrow`.
 - ~~`anchor`~~, for links ([heroicons#1160](https://github.com/tailwindlabs/heroicons/discussions/1160#discussioncomment-19337418))
+- ~~`arrow-uturn-left-down`~~ and ~~`arrow-uturn-right-down`~~: the vertical flips of `arrow-uturn-left` and `-right`, completing the
+  mirrored set with `arrow-uturn-down-right` and `arrow-uturn-up-left`
+  ([heroicons#1160](https://github.com/tailwindlabs/heroicons/discussions/1160#discussioncomment-19346702))
 
 ## Done: simple shapes with demand
 
@@ -53,8 +56,9 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
 - ~~`circle-half-full`~~, for high contrast and an automatic light/dark theme ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1366](https://github.com/tailwindlabs/heroicons/discussions/1366))
 - ~~Next and previous track~~ (`forward-bar`, `backward-bar`) ([#1001](https://github.com/tailwindlabs/heroicons/discussions/1001))
 - Closed captions and ad badges in the style of `gif` ([#567](https://github.com/tailwindlabs/heroicons/discussions/567))
-- ~~`battery-25`~~, ~~`battery-75`~~, `battery-charging`
-- `face-id`, ~~`headset`~~ (a headset with a microphone), `dumbbell`, `chart-line`, `hammer`, `folder-x-mark`
+- ~~`battery-25`~~, ~~`battery-75`~~, ~~`battery-charging`~~
+- ~~`face-id`~~, ~~`headset`~~ (a headset with a microphone), ~~`dumbbell`~~, ~~`chart-line-up`~~ and ~~`chart-line-down`~~ (line charts
+  with axes, unlike Heroicons' bare `arrow-trending-*`), ~~`hammer`~~, ~~`folder-x-mark`~~
 
 ## Wanted, but real design work
 

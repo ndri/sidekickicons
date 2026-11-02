@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add new icons (`arrow-uturn-left-down`, `arrow-uturn-right-down`, `battery-charging`, `folder-x-mark`, `chart-line-up`, `chart-line-down`, `hammer`, `dumbbell`, `face-id`)
+
 ## [0.20.0] - 2026-11-02
 
 ### Added
