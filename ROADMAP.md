@@ -55,6 +55,7 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
 - ~~`pill`~~: 5 ([#892](https://github.com/tailwindlabs/heroicons/discussions/892))
 - ~~`circle-half-full`~~, for high contrast and an automatic light/dark theme ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1366](https://github.com/tailwindlabs/heroicons/discussions/1366))
 - ~~Next and previous track~~ (`forward-bar`, `backward-bar`) ([#1001](https://github.com/tailwindlabs/heroicons/discussions/1001))
+- A construction barrier, for "under construction" ([#460](https://github.com/tailwindlabs/heroicons/discussions/460))
 - Closed captions and ad badges in the style of `gif` ([#567](https://github.com/tailwindlabs/heroicons/discussions/567))
 - ~~`battery-25`~~, ~~`battery-75`~~, ~~`battery-charging`~~
 - ~~`face-id`~~, ~~`headset`~~ (a headset with a microphone), ~~`dumbbell`~~, ~~`chart-line-up`~~ and ~~`chart-line-down`~~ (line charts
