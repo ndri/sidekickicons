@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add new icons (`barrier`, `cc`, `ad`, `plug`, `usb`, `stethoscope`, `fork-knife`, `car`)
+
 ## [0.21.0] - 2026-11-04
 
 ### Added

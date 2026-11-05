@@ -55,20 +55,21 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
 - ~~`pill`~~: 5 ([#892](https://github.com/tailwindlabs/heroicons/discussions/892))
 - ~~`circle-half-full`~~, for high contrast and an automatic light/dark theme ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1366](https://github.com/tailwindlabs/heroicons/discussions/1366))
 - ~~Next and previous track~~ (`forward-bar`, `backward-bar`) ([#1001](https://github.com/tailwindlabs/heroicons/discussions/1001))
-- A construction barrier, for "under construction" ([#460](https://github.com/tailwindlabs/heroicons/discussions/460))
-- Closed captions and ad badges in the style of `gif` ([#567](https://github.com/tailwindlabs/heroicons/discussions/567))
+- ~~`barrier`~~, a construction barrier for "under construction" ([#460](https://github.com/tailwindlabs/heroicons/discussions/460))
+- ~~`plug`~~ and ~~`usb`~~, connections ([#955](https://github.com/tailwindlabs/heroicons/discussions/955), [#1414](https://github.com/tailwindlabs/heroicons/discussions/1414))
+- ~~`cc`~~ and ~~`ad`~~, closed captions and ad badges in the style of `gif` ([#567](https://github.com/tailwindlabs/heroicons/discussions/567))
 - ~~`battery-25`~~, ~~`battery-75`~~, ~~`battery-charging`~~
 - ~~`face-id`~~, ~~`headset`~~ (a headset with a microphone), ~~`dumbbell`~~, ~~`chart-line-up`~~ and ~~`chart-line-down`~~ (line charts
   with axes, unlike Heroicons' bare `arrow-trending-*`), ~~`hammer`~~, ~~`folder-x-mark`~~
 
 ## Wanted, but real design work
 
-- Car: 72 ([#400](https://github.com/tailwindlabs/heroicons/discussions/400), [#443](https://github.com/tailwindlabs/heroicons/discussions/443), [#687](https://github.com/tailwindlabs/heroicons/discussions/687)), the most wanted icon that isn't a brand. Then a bicycle
-- Food, like a fork and knife: 31 ([#826](https://github.com/tailwindlabs/heroicons/discussions/826), [#465](https://github.com/tailwindlabs/heroicons/discussions/465))
+- ~~`car`~~: 72 ([#400](https://github.com/tailwindlabs/heroicons/discussions/400), [#443](https://github.com/tailwindlabs/heroicons/discussions/443), [#687](https://github.com/tailwindlabs/heroicons/discussions/687)), the most wanted icon that isn't a brand. Then a bicycle
+- Food, like a fork and knife (~~`fork-knife`~~): 31 ([#826](https://github.com/tailwindlabs/heroicons/discussions/826), [#465](https://github.com/tailwindlabs/heroicons/discussions/465))
 - Accessibility figure and wheelchair: 21 ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1391](https://github.com/tailwindlabs/heroicons/discussions/1391))
 - Brain: 19 ([#342](https://github.com/tailwindlabs/heroicons/discussions/342))
 - RAM, disk and ethernet: 17 ([#604](https://github.com/tailwindlabs/heroicons/discussions/604))
-- Medical: 14 ([#1029](https://github.com/tailwindlabs/heroicons/discussions/1029))
+- Medical, like a ~~`pill`~~ and a ~~`stethoscope`~~ ([#429](https://github.com/tailwindlabs/heroicons/discussions/429), [#1317](https://github.com/tailwindlabs/heroicons/discussions/1317)): 14 ([#1029](https://github.com/tailwindlabs/heroicons/discussions/1029))
 - Handshake: 12 ([#442](https://github.com/tailwindlabs/heroicons/discussions/442))
 - Apple (the fruit)
 
