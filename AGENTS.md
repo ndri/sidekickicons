@@ -97,8 +97,8 @@ Good examples: `face-meh.ts` and `compass.ts` (solid-only shapes, small sizes wr
    mixes open and closed subpaths.
 2. Check it with `pnpm compare <name>` and look at the PNG.
 3. `pnpm compile && pnpm lint && pnpm typecheck`.
-4. Add a line to `CHANGELOG.md` under Unreleased. The site's search keywords live in
-   `sidekickicons-site/data/keywords.ts`.
+4. Add a line to `CHANGELOG.md` under Unreleased. The site's metadata for each icon (keywords,
+   descriptions, example text, roadmap groups) lives in `sidekickicons-site/src/lib/data/`.
 
 ## Gotchas
 
@@ -125,5 +125,7 @@ maintainer, who is logged in to npm; everything else can be prepared for them.
 5. `sidekickicons-svelte` and `sidekickicons-react-native` download `optimized/` from GitHub's `main`, so
    only after step 2 is pushed: bump their version, `pnpm build`, commit as `vx.y.z`, `npm publish`, push.
    These two take a few minutes to appear on npm after publishing.
-6. Once `@sidekickicons/react` is on npm, `sidekickicons-site` gets `pnpm add @sidekickicons/react@^x.y.z`, a
-   build, a commit and a push to `main`, which Vercel deploys.
+6. `sidekickicons-site` is a SvelteKit site that reads the icons from `@sidekickicons/svelte`, so once that is
+   on npm: `pnpm add -D @sidekickicons/svelte@^x.y.z`, the new icons' metadata in `src/lib/data/` (its tests
+   list what's missing), `node scripts/release-history.mjs`, a commit and a push to `main`. GitHub Actions
+   tests, builds and deploys it to the VPS.
