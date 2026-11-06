@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add new icons (`calendar-plus`, `calendar-minus`, `calendar-check`, `calendar-x-mark`, `user-check`, `user-x-mark`, `document-x-mark`, `folder-check`, `folder-arrow-up`, `cloud-check`, `cloud-slash`, `wifi-slash`, `camera-slash`, `photo-slash`, `computer-desktop-slash`)
+- Add new icons (`calendar-plus`, `calendar-minus`, `calendar-check`, `calendar-x-mark`, `user-check`, `user-x-mark`, `document-x-mark`, `folder-check`, `folder-arrow-up`, `cloud-check`, `cloud-slash`, `wifi-slash`, `camera-slash`, `photo-slash`, `computer-desktop-slash`, `shield-x-mark`, `cloud-x-mark`, `cloud-plus`, `cloud-exclamation`, `cloud-arrow-path`, `calendar-arrow-path`, `calendar-exclamation`, `document-exclamation`, `folder-exclamation`, `bookmark-plus`, `bookmark-check`, `bookmark-x-mark`, `trash-arrow-up`, `trash-x-mark`, `map-pin-slash`, `heart-slash`, `star-slash`)
 
 ## [0.22.0] - 2026-11-05
 
