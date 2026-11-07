@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.23.0] - 2026-11-07
+
 ### Added
 
 - Add new icons (`calendar-plus`, `calendar-minus`, `calendar-check`, `calendar-x-mark`, `user-check`, `user-x-mark`, `document-x-mark`, `folder-check`, `folder-arrow-up`, `cloud-check`, `cloud-slash`, `wifi-slash`, `camera-slash`, `photo-slash`, `computer-desktop-slash`, `shield-x-mark`, `cloud-x-mark`, `cloud-plus`, `cloud-exclamation`, `cloud-arrow-path`, `calendar-arrow-path`, `calendar-exclamation`, `document-exclamation`, `folder-exclamation`, `bookmark-plus`, `bookmark-check`, `bookmark-x-mark`, `trash-arrow-up`, `trash-x-mark`, `map-pin-slash`, `heart-slash`, `star-slash`, `document-arrow-path`, `folder-arrow-path`, `user-exclamation`, `shield-plus`)
@@ -194,7 +196,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.22.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.23.0...HEAD
+[0.23.0]: https://github.com/ndri/sidekickicons/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/ndri/sidekickicons/compare/v0.21.0...v0.22.0
 [0.21.0]: https://github.com/ndri/sidekickicons/compare/v0.20.0...v0.21.0
 [0.20.0]: https://github.com/ndri/sidekickicons/compare/v0.19.0...v0.20.0
