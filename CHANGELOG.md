@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Declare `@types/react` as an optional peer dependency of `@sidekickicons/react` and `@sidekickicons/react-native`, so their types resolve when packages are installed outside the project, as with pnpm's global virtual store
+
 ## [0.23.0] - 2026-11-07
 
 ### Added

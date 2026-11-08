@@ -144,6 +144,12 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": ">= 16 || ^19.0.0-rc"
+    "react": ">= 16 || ^19.0.0-rc",
+    "@types/react": "*"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
   }
 }
