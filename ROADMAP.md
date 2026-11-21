@@ -58,7 +58,7 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
 - ~~`barrier`~~, a construction barrier for "under construction" ([#460](https://github.com/tailwindlabs/heroicons/discussions/460))
 - A traffic cone, for "coming soon" ([#388](https://github.com/tailwindlabs/heroicons/discussions/388))
 - ~~`plug`~~ and ~~`usb`~~, connections ([#955](https://github.com/tailwindlabs/heroicons/discussions/955), [#1414](https://github.com/tailwindlabs/heroicons/discussions/1414))
-- `plug-slash`, for disconnected ([#1187](https://github.com/tailwindlabs/heroicons/discussions/1187))
+- ~~`plug-slash`~~, for disconnected ([#1187](https://github.com/tailwindlabs/heroicons/discussions/1187))
 - ~~`cc`~~ and ~~`ad`~~, closed captions and ad badges in the style of `gif` ([#567](https://github.com/tailwindlabs/heroicons/discussions/567))
 - ~~`battery-25`~~, ~~`battery-75`~~, ~~`battery-charging`~~
 - ~~`face-id`~~, ~~`headset`~~ (a headset with a microphone), ~~`dumbbell`~~, ~~`chart-line-up`~~ and ~~`chart-line-down`~~ (line charts
@@ -67,13 +67,13 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
 ## Wanted, but real design work
 
 - ~~`car`~~: 72 ([#400](https://github.com/tailwindlabs/heroicons/discussions/400), [#443](https://github.com/tailwindlabs/heroicons/discussions/443), [#687](https://github.com/tailwindlabs/heroicons/discussions/687)), the most wanted icon that isn't a brand
-- A bicycle and a scooter, to go with `car` and Heroicons' `truck` ([#1101](https://github.com/tailwindlabs/heroicons/discussions/1101), [#400](https://github.com/tailwindlabs/heroicons/discussions/400))
+- ~~`bicycle`~~ and a scooter, to go with `car` and Heroicons' `truck` ([#1101](https://github.com/tailwindlabs/heroicons/discussions/1101), [#400](https://github.com/tailwindlabs/heroicons/discussions/400))
 - Food, like a fork and knife (~~`fork-knife`~~): 31 ([#826](https://github.com/tailwindlabs/heroicons/discussions/826), [#465](https://github.com/tailwindlabs/heroicons/discussions/465))
 - Accessibility figure and wheelchair: 21 ([#473](https://github.com/tailwindlabs/heroicons/discussions/473), [#1391](https://github.com/tailwindlabs/heroicons/discussions/1391))
 - Brain: 19 ([#342](https://github.com/tailwindlabs/heroicons/discussions/342))
 - RAM, disk and ethernet: 17 ([#604](https://github.com/tailwindlabs/heroicons/discussions/604))
 - Medical, like a ~~`pill`~~ and a ~~`stethoscope`~~ ([#429](https://github.com/tailwindlabs/heroicons/discussions/429), [#1317](https://github.com/tailwindlabs/heroicons/discussions/1317)): 14 ([#1029](https://github.com/tailwindlabs/heroicons/discussions/1029))
-- Handshake: 12 ([#442](https://github.com/tailwindlabs/heroicons/discussions/442))
+- Handshake: 12 ([#442](https://github.com/tailwindlabs/heroicons/discussions/442), [#1419](https://github.com/tailwindlabs/heroicons/discussions/1419))
 - Apple (the fruit)
 
 ## Backlog

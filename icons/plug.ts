@@ -1,7 +1,7 @@
 import { icon, line, path, scaled } from '../compiler/dsl.ts'
 
 // Two prongs on top of a rounded plug, with its cable running down
-const plug = [
+export const plug = [
   line(9.75, 3, 9.75, 8.25),
   line(14.25, 3, 14.25, 8.25),
   path('M7.5 8.25h9v2.25a4.5 4.5 0 0 1-9 0Z'),
