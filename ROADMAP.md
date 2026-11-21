@@ -73,7 +73,7 @@ By lucianmarin in [heroicons#1160](https://github.com/tailwindlabs/heroicons/dis
 - Brain: 19 ([#342](https://github.com/tailwindlabs/heroicons/discussions/342))
 - RAM, disk and ethernet: 17 ([#604](https://github.com/tailwindlabs/heroicons/discussions/604))
 - Medical, like a ~~`pill`~~ and a ~~`stethoscope`~~ ([#429](https://github.com/tailwindlabs/heroicons/discussions/429), [#1317](https://github.com/tailwindlabs/heroicons/discussions/1317)): 14 ([#1029](https://github.com/tailwindlabs/heroicons/discussions/1029))
-- Handshake: 12 ([#442](https://github.com/tailwindlabs/heroicons/discussions/442), [#1419](https://github.com/tailwindlabs/heroicons/discussions/1419))
+- ~~`handshake`~~: 12 ([#442](https://github.com/tailwindlabs/heroicons/discussions/442), [#1419](https://github.com/tailwindlabs/heroicons/discussions/1419))
 - Apple (the fruit)
 
 ## Backlog
