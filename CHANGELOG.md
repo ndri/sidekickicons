@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.24.0] - 2026-11-22
+
 ### Added
 
 - Add new icons (`bicycle`, `plug-slash`, `handshake`, `skip-forward`, `skip-backward`, `step-forward`, `step-backward`)
@@ -204,7 +206,8 @@ Forked from [Heroicons](https://github.com/tailwindlabs/heroicons) v2.1.5.
 
 - Add first icons (`arrow-path-clock`, `compass`, `crown`, `mask`)
 
-[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.23.0...HEAD
+[unreleased]: https://github.com/ndri/sidekickicons/compare/v0.24.0...HEAD
+[0.24.0]: https://github.com/ndri/sidekickicons/compare/v0.23.0...v0.24.0
 [0.23.0]: https://github.com/ndri/sidekickicons/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/ndri/sidekickicons/compare/v0.21.0...v0.22.0
 [0.21.0]: https://github.com/ndri/sidekickicons/compare/v0.20.0...v0.21.0
