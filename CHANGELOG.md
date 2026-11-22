@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add new icons (`bicycle`, `plug-slash`, `handshake`)
+- Add new icons (`bicycle`, `plug-slash`, `handshake`, `skip-forward`, `skip-backward`, `step-forward`, `step-backward`)
 
 ### Fixed
 
